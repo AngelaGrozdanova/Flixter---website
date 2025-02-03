@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlixTer</title>
+
+    <link rel="shortcut icon" href="flixter.svg" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/Flixter__1_-removebg-preview-_1_.svg"
+    />
+    <link rel="preload" as="image" href="flixter.svg" />
+  </head>
+  <body>
+    <div class="preloader" data-preloader>
+      <div class="preloader-inner">
+        <img src="flixter.svg" width="50" height="50" class="img" />
+      </div>
+    </div>
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/images/Flixter__1_-removebg-preview-_1_.svg" />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img src="./assets/images/Flixter__1_-removebg-preview-_1_.svg" />
+            </a>
+
+            <button
+              class="nav-toggle-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link active">Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#service" class="navbar-link">About</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#features" class="navbar-link">Services</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#experience" class="navbar-link">Experience</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#gallery" class="navbar-link">Gallery</a>
+            </li>
+          </ul>
+
+          <div class="header-action">
+            <a href="login.html" class="login-btn">Login</a>
+
+            <a href="register.html" class="btn btn-primary">Sign Up</a>
+          </div>
+        </nav>
+
+        <button class="nav-toggle-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-overlay data-nav-toggler></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section
+          class="section hero has-bg-image"
+          aria-label="hero"
+          style="background-image: url(./assets/images/hero-bg.jpg)"
+          id="home"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">
+                Explore the Movies Out There
+                <img
+                  src="./assets/images/title-icon.svg"
+                  width="20"
+                  height="20"
+                  alt="world icon"
+                  class="img"
+                />
+              </p>
+
+              <h1 class="h1 title hero-title">
+                Watch Trailers, Discover New Movies
+              </h1>
+
+              <p class="hero-text">
+                We always delight our users by offering an endless variety of
+                movie trailers to explore.
+              </p>
+
+              <div class="wrapper">
+                <a href="#cta" class="btn btn-secondary">
+                  <span class="span">Discover Movies</span>
+
+                  <ion-icon
+                    name="chevron-forward"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+
+                <button class="hero-btn">
+                  <div class="btn-img">
+                    <img
+                      src="./assets/images/Watch.png"
+                      width="100"
+                      height="100"
+                      alt="our story"
+                      class="img-cover"
+                    />
+
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <a class="text" href="FLixter web app - video.mp4"
+                    >Watch our Story</a
+                  >
+                </button>
+              </div>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/Mobile_Look-removebg-preview.png"
+                width="631"
+                height="735"
+                alt="hero banner"
+                class="w-200"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section class="section service" id="service" aria-label="service">
+          <div class="container">
+            <div class="title-wrapper">
+              <p class="section-subtitle">What We Serve</p>
+
+              <h2 class="h2 title section-title">Top Values For You</h2>
+
+              <p class="section-text">
+                Try a variety of benefits when using our services.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/movie.png"
+                  height="60"
+                  width="60"
+                  loading="lazy"
+                  alt="icon"
+                />
+              </div>
+
+              <h3 class="h3 title card-title">Trending Movies</h3>
+
+              <p class="card-text">Weekly popular movie titles.</p>
+            </div>
+
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/video-player.png"
+                  height="60"
+                  width="60"
+                  loading="lazy"
+                  alt="icon"
+                />
+              </div>
+
+              <h3 class="h3 title card-title">Movie Details</h3>
+
+              <p class="card-text">Full info, trailers, and reviews.</p>
+            </div>
+
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/tv.png"
+                  height="60"
+                  width="60"
+                  loading="lazy"
+                  alt="icon"
+                />
+              </div>
+
+              <h3 class="h3 title card-title">Genre Lists</h3>
+
+              <p class="card-text">Browse movies by categories.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section desti" id="features" aria-label="destination">
+          <div class="container">
+            <p class="section-subtitle">Top Movies</p>
+
+            <h2 class="h2 title section-title">
+              Explore Top Movies and Features
+            </h2>
+
+            <ul class="desti-list">
+              <li>
+                <div class="desti-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 650"
+                  >
+                    <img
+                      src="./assets/images/Ad3.png"
+                      width="600"
+                      height="650"
+                      class="img-cover"
+                    />
+                    <span class="card-price">Top Pick</span>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 title">
+                      <a href="#" class="card-title">
+                        Trending Movie of the Week
+                      </a>
+                    </h3>
+
+                    <address class="card-text">Action, Drama</address>
+
+                    <div class="card-rating">
+                      <span class="span">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                        4.8
+                      </span>
+
+                      <p class="rating-text">(25k Reviews)</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="desti-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 650"
+                  >
+                    <img
+                      src="./assets/images/Ad6.png"
+                      width="600"
+                      height="650"
+                      class="img-cover"
+                    />
+                    <span class="card-price">Rated</span>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 title">
+                      <a href="#" class="card-title"> Top Rated Movies </a>
+                    </h3>
+
+                    <address class="card-text">Drama, Comedy</address>
+
+                    <div class="card-rating">
+                      <span class="span">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                        4.6
+                      </span>
+
+                      <p class="rating-text">(16.9k Review)</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="desti-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 650"
+                  >
+                    <img
+                      src="./assets/images/Ad1.png"
+                      width="600"
+                      height="650"
+                      class="img-cover"
+                    />
+                    <span class="card-price">Upcoming</span>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 title">
+                      <a href="#" class="card-title"> Upcoming Movies </a>
+                    </h3>
+
+                    <address class="card-text">Action, Drama</address>
+
+                    <div class="card-rating">
+                      <span class="span">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                        4.7
+                      </span>
+
+                      <p class="rating-text">(120k Review)</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="desti-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 650"
+                  >
+                    <img
+                      src="./assets/images/Ad2.png"
+                      width="600"
+                      height="650"
+                      class="img-cover"
+                    />
+                    <span class="card-price">Language</span>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 title">
+                      <a href="#" class="card-title">
+                        Pick Movie Language Page
+                      </a>
+                    </h3>
+
+                    <address class="card-text">
+                      English, French, Spanish
+                    </address>
+
+                    <div class="card-rating">
+                      <span class="span">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                        4.7
+                      </span>
+
+                      <p class="rating-text">(20k Review)</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="desti-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 650"
+                  >
+                    <img
+                      src="./assets/images/Ad5.png"
+                      width="600"
+                      height="650"
+                      class="img-cover"
+                    />
+                    <span class="card-price">Search</span>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 title">
+                      <a href="#" class="card-title">Search Movies</a>
+                    </h3>
+
+                    <address class="card-text">
+                      You can quickly find any movie you want
+                    </address>
+
+                    <div class="card-rating">
+                      <span class="span">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                        5.2
+                      </span>
+
+                      <p class="rating-text">(28k Review)</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="desti-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 650"
+                  >
+                    <img
+                      src="./assets/images/Ad4.png"
+                      width="600"
+                      height="650"
+                      class="img-cover"
+                    />
+                    <span class="card-price">Load more</span>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 title">
+                      <a href="#" class="card-title"> Load More Option </a>
+                    </h3>
+
+                    <address class="card-text">
+                      Scroll through endless options and load new titles with a
+                      single click
+                    </address>
+
+                    <div class="card-rating">
+                      <span class="span">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                        4.8
+                      </span>
+
+                      <p class="rating-text">(29.6k Review)</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#cta" class="btn btn-primary">View All Movies</a>
+          </div>
+        </section>
+
+        <section class="section exp" id="experience" aria-label="experience">
+          <div class="container">
+            <div class="exp-content">
+              <p class="section-subtitle">Our Experience</p>
+
+              <h2 class="h2 title section-title">Movies, One Click Away</h2>
+
+              <p class="section-text">
+                Since our launch, we’ve always focused on providing users with
+                the best movie streaming experience.
+              </p>
+
+              <ul class="exp-list">
+                <li class="exp-item">
+                  <h3 class="h3 title item-title">1,000+</h3>
+
+                  <p class="item-text">
+                    Movies <br />
+                    Available
+                  </p>
+                </li>
+
+                <li class="exp-item">
+                  <h3 class="h3 title item-title">460+</h3>
+
+                  <p class="item-text">
+                    Movie Trailers <br />
+                    Watched
+                  </p>
+                </li>
+
+                <li class="exp-item">
+                  <h3 class="h3 title item-title">10K+</h3>
+
+                  <p class="item-text">
+                    Happy <br />
+                    Customer
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <figure class="exp-banner">
+              <img
+                src="banner.png"
+                width="550"
+                height="660"
+                loading="lazy"
+                alt="experience banner"
+                class="w-200"
+              />
+
+              <img
+                src="./assets/images/exp-shape.svg"
+                width="75"
+                height="109"
+                loading="lazy"
+                alt="24/7 Guide Support"
+                class="exp-shape"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section class="section gallery" id="gallery" aria-label="gallery">
+          <div class="container">
+            <p class="section-subtitle">Photo Gallery</p>
+            <h2 class="h2 title section-title">Photos from Our Users</h2>
+
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure
+                  class="item-banner img-holder"
+                  style="--width: 700; --height: 925"
+                >
+                  <img
+                    src="./assets/images/gallery8.png"
+                    width="700"
+                    height="925"
+                    loading="lazy"
+                    alt="gallery"
+                    class="img-cover"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure
+                  class="item-banner img-holder"
+                  style="--width: 700; --height: 925"
+                >
+                  <img
+                    src="./assets/images/gallery2.png"
+                    width="700"
+                    height="925"
+                    loading="lazy"
+                    alt="gallery"
+                    class="img-cover"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure
+                  class="item-banner img-holder"
+                  style="--width: 700; --height: 840"
+                >
+                  <img
+                    src="./assets/images/gallery1.png"
+                    width="700"
+                    height="840"
+                    loading="lazy"
+                    alt="gallery"
+                    class="img-cover"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure
+                  class="item-banner img-holder"
+                  style="--width: 700; --height: 378"
+                >
+                  <img
+                    src="./assets/images/gallery3.png"
+                    width="700"
+                    height="378"
+                    loading="lazy"
+                    alt="gallery"
+                    class="img-cover"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure
+                  class="item-banner img-holder"
+                  style="--width: 700; --height: 378"
+                >
+                  <img
+                    src="./assets/images/gallery6.png"
+                    width="700"
+                    height="378"
+                    loading="lazy"
+                    alt="gallery"
+                    class="img-cover"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure
+                  class="item-banner img-holder"
+                  style="--width: 700; --height: 378"
+                >
+                  <img
+                    src="./assets/images/gallery7.png"
+                    width="700"
+                    height="378"
+                    loading="lazy"
+                    alt="gallery"
+                    class="img-cover"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section cta" id="cta" aria-label="call to action">
+          <div class="container">
+            <div
+              class="cta-card has-bg-image"
+              style="background-image: url(./assets/images/cta-bg.jpg)"
+            >
+              <h2 class="h2 title section-title">
+                Discover, Explore, and Find Your Perfect Movie Instantly!
+
+                <img
+                  src="./assets/images/title-icon.svg"
+                  width="36"
+                  height="36"
+                  loading="lazy"
+                  alt="icon"
+                  class="img"
+                />
+              </h2>
+
+              <p class="section-text">
+                We’ve got something unique waiting just for you!
+              </p>
+
+              <a
+                href="https://angelagrozdanova.github.io/Flixter/"
+                class="btn btn-primary"
+                id="getStartedBtn"
+                target="_blank"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/Flixter__1_-removebg-preview-_1_.svg"
+                alt="logo"
+                width="187"
+                height="38"
+              />
+            </a>
+
+            <p class="footer-text">
+              We always make our customer happy by providing as many choices as
+              possible
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">About</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Features</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">News</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Menu</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Why Company</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Partner With Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Support</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Support Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Feedback</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Accessibility</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Get in Touch</p>
+
+            <p class="footer-text">
+              Question or feedback? We’d love to hear from you.
+            </p>
+
+            <form
+              action="mailto:ahg_2020g@pgiblg.com"
+              method="post"
+              class="input-wrapper"
+            >
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Email Address"
+                autocomplete="off"
+                required
+                class="input-field"
+              />
+
+              <button
+                type="submit"
+                class="input-btn"
+                aria-label="send a message"
+              >
+                <ion-icon
+                  name="paper-plane-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            All Rights Reserved 2025. Made by
+            <a href="#" class="copyright-link">Angela Grozdanova</a>
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Terms and Condition</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy and Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

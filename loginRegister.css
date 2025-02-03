@@ -1,0 +1,246 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(assets/images/hero-bg.jpg);
+}
+
+section {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+section span {
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #e6e6e6;
+  z-index: 2;
+  transition: 1.5s;
+}
+
+section span:hover {
+  background: #82b4ff;
+  transition: 0s;
+}
+
+.container {
+  position: absolute;
+  max-width: 380px;
+  width: 90%;
+  padding: 25px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.container header {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+  color: #5372f0;
+}
+
+.container form {
+  margin-top: 30px;
+}
+
+form .field {
+  margin-bottom: 20px;
+}
+
+form .input-field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  color: #333333;
+}
+
+.success-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #82b4ff, #5372f0);
+  border-radius: 50%;
+  z-index: 999;
+  animation: scaleUp 0.8s ease-in-out, fadeOut 2s 1.5s forwards;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.input-field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 15px;
+  background: #f7f8fa;
+  color: #333333;
+  border: 1.5px solid #5372f0;
+}
+
+.invalid input {
+  border-color: #ff5a5a;
+}
+
+.input-field .show-hide {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #333333;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.field .error {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #ff5a5a;
+  font-size: 14px;
+  display: none;
+}
+
+.invalid .error {
+  display: flex;
+}
+
+.error .error-icon {
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+.create-password .error {
+  align-items: flex-start;
+}
+
+.create-password .error-icon {
+  margin-top: 4px;
+}
+
+.button {
+  margin: 25px 0 6px;
+}
+
+form .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form .links a {
+  color: #5372f0;
+  text-decoration: none;
+}
+
+form .links a:nth-child(2) {
+  font-weight: 600;
+}
+
+.button input {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 500;
+  background-color: #5372f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button input:hover {
+  background-color: #3a5dbf;
+}
+
+.button input:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section span {
+    width: calc(
+      8.33vw - 2px
+    ); /* Прави квадратите по-големи на по-малки екрани */
+    height: calc(8.33vw - 2px);
+  }
+
+  .container {
+    max-width: 300px; /* Намалява ширината за телефони */
+    padding: 20px;
+  }
+
+  .container header {
+    font-size: 24px; /* Намалява заглавието за телефони */
+  }
+
+  .input-field input {
+    font-size: 14px; /* По-малък шрифт в полетата за въвеждане */
+  }
+
+  .button input {
+    font-size: 16px; /* Намалява текста на бутона */
+  }
+}
+
+@media (max-width: 480px) {
+  section span {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+
+  .container {
+    max-width: 90%; /* По-добра адаптация за супер малки екрани */
+  }
+
+  .container header {
+    font-size: 20px;
+  }
+}
