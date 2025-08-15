@@ -3,4 +3,4 @@ Flixter - Web App is a dynamic platform designed for movie enthusiasts. It allow
 
 [Watch the video!](https://vimeo.com/1110269850)
 
-[Homepage!](screen.png)
+![Homepage!](screen.png)
